@@ -4,7 +4,7 @@
  * US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
 */
 
-if (process.env.USE_ZIPKIN) {
+if (process.env.USE_ZIPKIN==true) {
   console.log("This sample will attempt to send trace data to a Zipkin server")
   var zipkinHost = "localhost"
   var zipkinPort = 9411
@@ -60,5 +60,5 @@ app.get('/', function(req, res) {
 
 const port = process.env.PORT || localConfig.port;
 app.listen(port, function(){
-  logger.info(`Node.js sample listening on http://localhost:${port}`);
+  logger.info(`XXXX ECK Node.js sample listening on http://localhost:${port}`);
 });
